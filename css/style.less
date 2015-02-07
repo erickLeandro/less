@@ -1,7 +1,17 @@
-@corDeFundo: #000;
-@corDoTexto: #FFF;
+@cinza: #F4F4F4;
 
-body {
-  background-color: @corDeFundo;
-  color: @corDoTexto;
+.border-radius (@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+header{
+  background-color: @cinza;
+  .border-radius(10px);
+}
+
+footer{
+  background-color: @cinza;
+  .border-radius(10px);
 }
