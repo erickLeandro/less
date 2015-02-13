@@ -15,3 +15,13 @@ footer{
   background-color: @cinza;
   .border-radius(10px);
 }
+
+
+.loopH (@index) when (@index > 0) {
+  h@{index}{
+    color: red;
+  }
+  .loopH(@index - 1)
+}
+
+.loopH(3);
